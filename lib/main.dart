@@ -11,8 +11,10 @@ void main() async {
     // Using MultiProvider to user and todo for the app.
     MultiProvider(
       providers: [
+       // Provides UserProvider to the app, managing user-related data
         ChangeNotifierProvider(create: (context) => UserProvider()),
-         ChangeNotifierProvider(create: (context) => TodoProvider()),
+        // Provides TodoProvider to the app, managing to-do list-related data
+        ChangeNotifierProvider(create: (context) => TodoProvider()),
       ],
       child: const MyApp(),
     ),
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Task',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepOrange),
-      home: const HomeScreen(),
+      home: const HomeScreen(), // Home screen of the app
     );
   }
 }

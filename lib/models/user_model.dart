@@ -7,6 +7,8 @@ class User {
   final double lng;
   final String phone;
 
+
+  // Constructor to initialize the User class
   User({
     required this.id,
     required this.name,
@@ -16,6 +18,7 @@ class User {
     required this.phone,
   });
 
+// Factory method to create a User object from a JSON map
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['id'],

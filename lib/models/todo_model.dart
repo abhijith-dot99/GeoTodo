@@ -6,6 +6,7 @@ class Todo {
   final String title;
   final bool completed;
 
+  // Constructor to initialize the Todo class
   Todo({
     required this.id,
     required this.userId,
@@ -13,6 +14,7 @@ class Todo {
     required this.completed,
   });
 
+  // Factory method to create a Todo object from a JSON map
   factory Todo.fromJson(Map<String, dynamic> json) {
     return Todo(
       id: json['id'],
