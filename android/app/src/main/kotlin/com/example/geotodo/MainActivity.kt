@@ -1,0 +1,5 @@
+package com.example.geotodo
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()
